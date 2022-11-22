@@ -1,10 +1,12 @@
 import { TestBed } from '@angular/core/testing';
+import { CdsButtonModule } from '@cds/angular';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [CdsButtonModule],
       declarations: [AppComponent, NxWelcomeComponent],
     }).compileComponents();
   });
